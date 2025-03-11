@@ -1,2 +1,2 @@
-web: gunicorn --pythonpath . django_project.wsgi --log-file -
+gunicorn blog.wsgi --bind 0.0.0.0:$PORT --log-file -
 
